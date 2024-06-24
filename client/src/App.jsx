@@ -10,12 +10,16 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Form from './pages/Form';
 import Merchandise from './pages/Merchandise';
+import Footer from './components/Footer';
+import Registration from './pages/Registration';
+import Observer from './pages/Observer';
+import Competitor from './pages/Competitor';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
 
-  const user = false
+  const user = true
 
   return (
     <div className='w-screen h-screen relative overflow-x-hidden scroll-smooth'>
@@ -31,9 +35,12 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/merchandise" element={<Merchandise />} />
-          <Route exact path="/form" element={user ? (<Form />) : <Navigate replace to={"/signup"} /> } />
+          <Route exact path="/registration" element={user ? (<Registration />) : <Navigate replace to={"/signup"} /> } />
+          <Route path="/registration/observer" element={<Observer />} />
+          <Route path="/registration/competitor" element={<Competitor />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+
       </BrowserRouter>
     </div>
   )

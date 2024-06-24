@@ -14,6 +14,12 @@ const NavBar = () => {
       setShowNavBar(false)
     } else if (pathname === "/login") {
       setShowNavBar(false)
+    } else if (pathname === "/registration") {
+      setShowNavBar(false)
+    } else if (pathname === "/registration/observer") {
+      setShowNavBar(false)
+    } else if (pathname === "/registration/competitor") {
+      setShowNavBar(false)
     } else {
       setShowNavBar(true)
     }
@@ -21,9 +27,9 @@ const NavBar = () => {
   }, [pathname])
 
   return (
-    <nav>
+    <nav className='w-screen flex justify-center'>
       {/** desktop navbar */}
-      <div className={`${showNavBar ? "w-screen hidden md:flex justify-around items-center p-4 absolute z-10" : "hidden"}`}>
+      <div className={`${showNavBar ? "w-screen max-w-screen-2xl hidden md:flex justify-around items-center p-4 absolute z-10" : "hidden"}`}>
         <NavLink to="/">SIMPIC2025</NavLink>
         <div className='flex md:gap-5 items-center'>
           <NavLink to="/about">About us</NavLink>

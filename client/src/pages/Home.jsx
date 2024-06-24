@@ -30,14 +30,17 @@ const Home = ({ user }) => {
 
   return (
     <div className="min-w-screen min-h-screen bg-[rgba(255,255,255,1)] flex flex-col items-center font-inter">
-      <div className="relative bg-cover w-screen h-[750px] flex justify-center items">
-        <img
-          src={pic}
-          alt="microbio"
+      <div className="relative bg-cover w-screen h-[750px] flex justify-center items ">
+        <div
           className="h-[750px] w-screen opacity-40 bg-fixed"
           loading="lazy"
+          style={{
+            backgroundImage: `url(${pic})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
         />
-        {/** when login */}
         <div className="absolute text-center flex flex-col gap-3">
           <div className="relative w-screen max-w-screen-2xl h-[750px] flex flex-col justify-center items-center gap-4">
             <p className="text-[48px] md:text-[64px] text-black font-extrabold">
@@ -49,7 +52,7 @@ const Home = ({ user }) => {
               Immunology Competition
             </p>
             <NavLink
-              to="/form"
+              to="/registration"
               className="transition-all ease-in-out duration-300 delay-150 hover:-traanslate-y-1 hover:scale-110 bg-black hover:bg-gray-800 text-white w-fit px-4 py-3 rounded-lg"
             >
               Register Now
@@ -209,12 +212,16 @@ const Home = ({ user }) => {
         </div>
       </section>
       {/** fourth section */}
-      <section className="flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[5em]  px-4 md:px-20">
+      <section className="flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[5em] px-4 md:px-20">
         <div>
           <p className="text-xl md:text-4xl font-bold">
             What happens at SIMPIC last year
           </p>
         </div>
+      </section>
+      {/** fifth section */}
+      <section className="flex flex-col w-screen max-w-screen-2xl h-[750px] bg-[rgba(98,149,162,1)] justify-between items-center mt-[5em]  px-4 md:px-20">
+
       </section>
     </div>
   );

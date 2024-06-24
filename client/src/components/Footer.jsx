@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='w-screen h-[264px] border-t-2 border-t-[rgba(255,255,255,1)]'>
+      asdfas
+    </div>
   )
 }
 

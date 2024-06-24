@@ -31,10 +31,17 @@ const Contact = () => {
     }
   };
 
+  const submitFormHandler = (e) => {
+    e.preventDefault();
+
+    const contactData = new FormData(e.target)
+    contactData.append()
+  }
+
   return (
     <section className="mt-[10em] w-screen h-screen flex flex-col items-center font-inter">
       <div className="w-[75%] flex gap-10 justify-between">
-        <div className="flex flex-col items-start gap-8 w-[50%]">
+        <form className="flex flex-col items-start gap-8 w-[50%]" onSubmit={submitFormHandler}>
           <p className="text-6xl font-bold">Contact us</p>
           <p className="text-2xl text-[rgba(130,130,130,1)] font-light">
             Subheading for description or instructions
@@ -79,10 +86,10 @@ const Contact = () => {
               className="w-full min-h-[160px] border-[1px] border-[rgba(224,224,224,1)] px-4 py-2 rounded-lg text-[rgba(130,130,130,1)] text-[16px] outline-none"
             />
           </div>
-          <button className="bg-black text-white w-full py-3 rounded-lg">
+          <button type="submit" className="bg-black text-white w-full py-3 rounded-lg">
             Submit
           </button>
-        </div>
+        </form>
         <div className="bg-cover">
           <img src={orange} alt="wallpaper" loading="lazy"/>
         </div>
