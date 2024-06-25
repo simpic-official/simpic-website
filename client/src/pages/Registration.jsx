@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Registration = () => {
 
@@ -11,6 +12,8 @@ const Registration = () => {
         setSelectedTeam("competitor")
     }
   }
+
+
 
   return (
     <div className='w-screen h-screen bg-white flex justify-center items-center'>
@@ -32,14 +35,14 @@ const Registration = () => {
                 </button>
             )}
             {selectedTeam === "observer" && (
-                <button className='text-black bg-[rgba(139,146,218,1)]  px-6 py-4 rounded-lg font-semibold text-[24px]'>
+                <NavLink to="/registration/observer" className='text-black bg-[rgba(139,146,218,1)]  px-6 py-4 rounded-lg font-semibold text-[24px]'>
                     Join as an Observer
-                </button>
+                </NavLink>
             )}
             {selectedTeam === "competitor" && (
-                <button className='text-black bg-[rgba(139,146,218,1)] px-6 py-4 rounded-lg font-semibold text-[24px]'>
+                <NavLink to="/registration/competitor" className='text-black bg-[rgba(139,146,218,1)] px-6 py-4 rounded-lg font-semibold text-[24px]'>
                     Join as an Competitor/Advisor
-                </button>
+                </NavLink>
             )}
         </div>
     </div>

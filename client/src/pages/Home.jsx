@@ -29,7 +29,7 @@ const Home = ({ user }) => {
   }, [mouseEnter]);
 
   return (
-    <div className="min-w-screen min-h-screen bg-[rgba(255,255,255,1)] flex flex-col items-center font-inter">
+    <div className="min-w-screen min-h-screen bg-[rgba(255,255,255,1)] flex flex-col items-center font-inter scroll-smooth">
       <div className="relative bg-cover w-screen h-[750px] flex justify-center items ">
         <div
           className="h-[750px] w-screen opacity-40 bg-fixed"

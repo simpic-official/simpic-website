@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import Registration from './pages/Registration';
 import Observer from './pages/Observer';
 import Competitor from './pages/Competitor';
+import RegistrationProcess from './components/RegistrationProcess';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ const App = () => {
     <div className='w-screen h-screen relative overflow-x-hidden scroll-smooth'>
       <BrowserRouter>
         <NavBar />
+        <RegistrationProcess />
         <Routes>
           <Route path="/" element={<Home user={user} />} />
           <Route path="/about" element={<About />} />
