@@ -8,17 +8,19 @@ const NavBar = () => {
   const { pathname } = location;
 
   const [showNavBar, setShowNavBar] = useState(true);
+  const listsOfPathname = [
+    "/signup",
+    "/login",
+    "/registration",
+    "/registration/observer",
+    "/registration/competitor",
+    "/registration/observer/advisor-info",
+    "/registration/competitor/advisor-info",
+  ];
+
 
   useEffect(() => {
-    if (pathname === "/signup") {
-      setShowNavBar(false)
-    } else if (pathname === "/login") {
-      setShowNavBar(false)
-    } else if (pathname === "/registration") {
-      setShowNavBar(false)
-    } else if (pathname === "/registration/observer") {
-      setShowNavBar(false)
-    } else if (pathname === "/registration/competitor") {
+    if (listsOfPathname.includes(pathname)) {
       setShowNavBar(false)
     } else {
       setShowNavBar(true)

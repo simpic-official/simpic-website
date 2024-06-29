@@ -1,8 +1,8 @@
 import React from "react";
 
-const Form = () => {
+const Form = ({ rounded }) => {
   return (
-    <section className="w-[80%] border-[1px] border-[rgba(0,0,0,1)] p-10 rounded-lg">
+    <section className={`w-[80%] border-[1px] border-[rgba(0,0,0,1)] p-10 ${rounded}`}>
       <div className="flex flex-col gap-8">
         <p className="text-[1.5em] mb-4 font-medium">
           Part 1 : Personal Information
@@ -78,11 +78,11 @@ const Form = () => {
               <option value="" disabled selected>
                 Select an option
               </option>
-              <option value="">Option 1</option>
-              <option value="">Option 2</option>
-              <option value="">Option 3</option>
-              <option value="">Option 4</option>
-              <option value="">Option 5</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+              <option value="option 4">Option 4</option>
+              <option value="option 5">Option 5</option>
             </select>
           </div>
           <div className="flex flex-col gap-1">
@@ -99,11 +99,11 @@ const Form = () => {
               <option value="" disabled selected>
                 Select an option
               </option>
-              <option value="">Option 1</option>
-              <option value="">Option 2</option>
-              <option value="">Option 3</option>
-              <option value="">Option 4</option>
-              <option value="">Option 5</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+              <option value="option 4">Option 4</option>
+              <option value="option 5">Option 5</option>
             </select>
           </div>
         </div>
