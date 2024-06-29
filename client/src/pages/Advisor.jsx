@@ -1,11 +1,9 @@
 import React from "react";
-import RegistrationProcess from "../components/RegistrationProcess";
 import Form from "../components/Form";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
-
-const Observer = () => {
-
+const Advisor = () => {
+  
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -27,4 +25,4 @@ const Observer = () => {
   );
 };
 
-export default Observer;
+export default Advisor;

@@ -14,6 +14,8 @@ import Footer from './components/Footer';
 import Registration from './pages/Registration';
 import Observer from './pages/Observer';
 import Competitor from './pages/Competitor';
+import RegistrationProcess from './components/RegistrationProcess';
+import Advisor from './pages/Advisor';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
@@ -25,6 +27,7 @@ const App = () => {
     <div className='w-screen h-screen relative overflow-x-hidden scroll-smooth'>
       <BrowserRouter>
         <NavBar />
+        <RegistrationProcess />
         <Routes>
           <Route path="/" element={<Home user={user} />} />
           <Route path="/about" element={<About />} />
@@ -38,9 +41,10 @@ const App = () => {
           <Route exact path="/registration" element={user ? (<Registration />) : <Navigate replace to={"/signup"} /> } />
           <Route path="/registration/observer" element={<Observer />} />
           <Route path="/registration/competitor" element={<Competitor />} />
+          <Route path="/registration/observer/advisor-info" element={<Advisor />} />
+          <Route path="/registration/competitor/advisor-info" element={<Advisor />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-
       </BrowserRouter>
     </div>
   )
