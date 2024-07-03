@@ -78,7 +78,7 @@ const Home = ({ user }) => {
       {/** second section */}
       <section className="flex flex-wrap w-full max-w-screen-2xl h-fit justify-between items-center px-4 md:px-20">
         <div>
-          <img src={square} alt="scare" loading="lazy" />
+          <img src={square} alt="scare" loading="lazy" className="w-screen lg:w-auto" />
         </div>
         <div className="flex flex-col justify-around">
           <div className="flex gap-4 mb-10 mt-8 md:mt-0">
