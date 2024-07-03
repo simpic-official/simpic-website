@@ -190,7 +190,7 @@ const Program = () => {
           </div>
         </div>
       </div>
-      <div className="w-[80%] mt-[5em]">
+      <div className="w-[95%] lg:w-[80%] mt-[5em]">
         <p className="text-6xl text-center w-full font-bold">Activities</p>
         <div className="max-w-full snap-x snap-mandatory overflow-x-scroll h-screen flex flex-grow z-0 gap-4">
             <Carousel slides={slides} />

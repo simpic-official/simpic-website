@@ -33,7 +33,7 @@ const Home = ({ user }) => {
       <div className="relative bg-cover w-screen h-[750px] flex justify-center items ">
         <div
           className="h-[750px] w-screen opacity-40 bg-fixed"
-          loading="lazy"
+         
           style={{
             backgroundImage: `url(${pic})`,
             backgroundPosition: "center",
@@ -72,24 +72,24 @@ const Home = ({ user }) => {
           </button>
         </div>
         <div>
-          <img src={bird} alt="bird" className="w-[500px]" loading="lazy"/>
+          <img src={bird} alt="bird" className="w-[500px]"/>
         </div>
       </section>
       {/** second section */}
       <section className="flex flex-wrap w-full max-w-screen-2xl h-fit justify-between items-center px-4 md:px-20">
         <div>
-          <img src={square} alt="scare" loading="lazy" className="w-screen lg:w-auto" />
+          <img src={square} alt="scare" className="w-screen lg:w-auto" />
         </div>
         <div className="flex flex-col justify-around">
           <div className="flex gap-4 mb-10 mt-8 md:mt-0">
             <p className="text-4xl font-bold">Merchandise</p>
             <NavLink to="/merchandise">
-              <img src={arrow} alt="arrow" className="w-[40px] h-[40px]" loading="lazy"/>
+              <img src={arrow} alt="arrow" className="w-[40px] h-[40px]"/>
             </NavLink>
           </div>
           <div className="flex gap-3">
             <div className="flex flex-col gap-2">
-              <img src={merchandise} alt="merchandise" loading="lazy"/>
+              <img src={merchandise} alt="merchandise"/>
               <div className="mt-2">
                 <p>SIMPIC Shirt</p>
                 <p className="text-[rgba(130,130,130,1)] font-light">
@@ -99,7 +99,7 @@ const Home = ({ user }) => {
               </div>
             </div>
             <div className="flex flex-col gap-2">
-              <img src={merchandise} alt="merchandise" loading="lazy"/>
+              <img src={merchandise} alt="merchandise"/>
               <div className="mt-2">
                 <p>Tote Bag</p>
                 <p className="text-[rgba(130,130,130,1)] font-light">
