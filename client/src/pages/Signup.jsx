@@ -18,7 +18,7 @@ const Signup = () => {
             </div>
             <button className='bg-[rgba(238,238,238,1)] py-2 rounded-lg relative'>
                 <div className='absolute left-[4%] top-[30%]'>
-                    <img src={Google} alt="google" className='' loading="lazy"/>
+                    <img src={Google} alt="google" className=''/>
                 </div>
                 <p>Google</p>
             </button>

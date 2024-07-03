@@ -54,7 +54,7 @@ const Resources = () => {
             </button>
           </div>
           <div className="w-[55%]">
-            <img src={Sample} alt="sample" loading="lazy"/>
+            <img src={Sample} alt="sample" />
           </div>
         </div>
       </div>
