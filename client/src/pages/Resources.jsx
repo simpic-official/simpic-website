@@ -40,26 +40,26 @@ const Resources = () => {
   };
 
   return (
-    <section className="mt-[10em] w-screen h-screen flex flex-col items-center font-inter gap-[3em]">
-      <div className="flex flex-col w-[75%] h-fit">
+    <section className="mt-[5em] lg:mt-[10em] w-screen h-screen flex flex-col items-center font-inter gap-[3em]">
+      <div className="flex flex-col w-[90%] lg:w-[75%] h-fit">
         <p className="text-6xl font-bold text-start">Resources</p>
-        <div className="w-full flex justify-between bg-[rgba(230,230,230,1)] p-6 rounded-lg mt-[3em] drop-shadow-lg">
-          <div className="flex flex-col items-start justify-center gap-8">
-            <p className="text-4xl font-bold">Guidebook is available now</p>
-            <p className="text-2xl font-extralight">
+        <div className="w-full flex flex-wrap-reverse md:flex-row justify-center lg:justify-between bg-[rgba(230,230,230,1)] p-3 lg:p-6 rounded-lg mt-[3em] drop-shadow-lg">
+          <div className="flex flex-col items-center lg:items-start justify-center lg:gap-8 w-full lg:w-auto">
+            <p className="text-2xl mt-3 lg:mt-0 lg:text-4xl font-bold">Guidebook is available now</p>
+            <p className="text-md lg:text-2xl font-extralight">
               the ultimate guide to survive in Bangkok
             </p>
-            <button className="text-white bg-black rounded-lg p-4">
+            <button className="text-white bg-black rounded-lg p-2 lg:p-4 w-full max-w-[310px] lg:w-fit mt-2 lg:mt-0">
               Read now
             </button>
           </div>
-          <div className="w-[55%]">
+          <div className="w-full md:w-[55%]">
             <img src={Sample} alt="sample" />
           </div>
         </div>
       </div>
-      <div className="w-[65%]">
-        <div className="flex gap-6">
+      <div className="w-[90%] md:w-[65%]">
+        <div className="flex gap-6 overflow-auto p-2">
           <button
             className={`drop-shadow-lg rounded-full font-bold px-4 py-2 ${
               selectedButton.all === true
@@ -156,7 +156,7 @@ const Resources = () => {
             Pandemos
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-6 mt-[2em]">
+        <div className="w-full flex flex-col lg:grid grid-cols-3 gap-6 mt-[2em] border-2 border-black">
           {slides.map((slide, i) => (
             <ResourceCard slide={slide} key={i} />
           ))}
