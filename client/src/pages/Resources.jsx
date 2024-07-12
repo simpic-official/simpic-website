@@ -156,7 +156,7 @@ const Resources = () => {
             Pandemos
           </button>
         </div>
-        <div className="w-full flex flex-col lg:grid grid-cols-3 gap-6 mt-[2em] border-2 border-black">
+        <div className="w-full flex flex-col lg:grid grid-cols-3 gap-6 mt-[2em]">
           {slides.map((slide, i) => (
             <ResourceCard slide={slide} key={i} />
           ))}
