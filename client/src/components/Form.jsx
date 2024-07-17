@@ -29,19 +29,19 @@ const Form = ({ rounded, formData, handleChange }) => {
     allergy,
     dietaryLimitation,
     yesVegan,
-
     seasick,
     carsick, } = formData
 
   return (
-    <section className={`w-[90%] lg:w-[80%] border-[1px] outline-none border-[rgba(0,0,0,1)] p-10 max-w-screen-2xl ${rounded}`}>
-      <div className="flex flex-col items-center lg:items-start gap-8">
-        <p className="lg:text-[1.5em] text-[1.2em] mb-4 font-medium">
+    <section className={`w-[90%] lg:w-[80%] border-[1px] outline-none border-[rgba(0,0,0,1)] p-4 lg:p-10 max-w-screen-2xl ${rounded}`}>
+      {/** PART 1 - PERSONAL INFORMATION */}
+      <div className="p-5 lg:p-0 flex flex-col gap-4">
+        <p className="text-[24px] font-medium text-center lg:text-start">
           Part 1 : Personal Information
         </p>
         {/** NAME - LAYER */}
-        <div className="w-full flex flex-col lg:flex-row gap-1 items-center lg:justify-between font-medium">
-          <div className="flex flex-col gap-1 lg:w-[30%]">
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between w-full">
+          <div className="flex flex-col gap-1 font-medium  lg:w-[31%]">
             <label>First name</label>
             <input
               type="text"
@@ -49,10 +49,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="firstName"
               value={firstName}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 lg:w-[30%]">
+          <div className="flex flex-col gap-1 font-medium  lg:w-[31%]">
             <label>Last name</label>
             <input
               type="text"
@@ -60,10 +60,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="lastName"
               value={lastName}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 lg:w-[30%]">
+          <div className="flex flex-col gap-1 font-medium  lg:w-[31%]">
             <label>Nickname</label>
             <input
               type="text"
@@ -71,25 +71,25 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="nickName"
               value={nickName}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
         </div>
         {/** PROFILE PICTURE */}
-        <div className="flex flex-col items-center lg:gap-1 font-medium w-full">
-          <label className="self-start">Profile Picture</label>
+        <div className="flex flex-col gap-1 font-medium ">
+          <label>Profile Picture</label>
           <input
             type="text"
             placeholder="Jane"
             name="profilePic"
             value={profilePic}
             onChange={handleChange}
-            className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] lg:w-full placeholder:text-[rgba(130,130,130,1)]"
+            className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 lg:w-full placeholder:text-[rgba(130,130,130,1)]"
           />
         </div>
         {/** NATIONALITY - LAYER */}
-        <div className="w-full flex flex-col lg:flex-row gap-1 items-center lg:justify-between font-medium">
-          <div className="flex flex-col gap-1 lg:w-[30%]">
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between w-full">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Nationality</label>
             <input
               type="text"
@@ -97,10 +97,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="nationality"
               value={nationality}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 lg:w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Thai ID / Passport ID</label>
             <input
               type="text"
@@ -108,10 +108,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="ID"
               value={ID}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 lg:w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Birthday</label>
             <input
               type="text"
@@ -119,15 +119,15 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="birthday"
               value={birthday}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
         </div>
         {/** SEX - LAYER */}
-        <div className="w-full flex gap-1 justify-between font-medium">
-          <div className="flex flex-col gap-1 w-[30%]">
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between w-full">
+          <div className="flex flex-col gap-1 font-medium  min-w-[31%]">
             <label>Sex</label>
-            <select name="sex" value={sex} defaultValue="" onChange={handleChange} className="border-[1px] outline-none bg-white border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]">
+            <select name="sex" value={sex} defaultValue="" onChange={handleChange} className="border-[1px] outline-none bg-white border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]">
               <option value="" disabled selected>
                 Select an option
               </option>
@@ -138,7 +138,7 @@ const Form = ({ rounded, formData, handleChange }) => {
               <option value="option 5">Option 5</option>
             </select>
           </div>
-          <div className="flex flex-col gap-1 w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Gender</label>
             <input
               type="text"
@@ -146,12 +146,12 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="gender"
               value={gender}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 w-[30%]">
+          <div className="flex flex-col gap-1 font-medium  min-w-[31%]">
             <label>SIMPIC T-shirt size</label>
-            <select name="shirtSize" value={shirtSize} onChange={handleChange} className="border-[1px] outline-none bg-white border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]">
+            <select name="shirtSize" value={shirtSize} onChange={handleChange} className="border-[1px] outline-none bg-white border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]">
               <option value="" disabled selected>
                 Select an option
               </option>
@@ -164,7 +164,7 @@ const Form = ({ rounded, formData, handleChange }) => {
           </div>
         </div>
         {/** RELIGION */}
-        <div className="w-full flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>Religion</label>
           <input
             type="text"
@@ -176,7 +176,7 @@ const Form = ({ rounded, formData, handleChange }) => {
           />
         </div>
         {/** RELIGIOUS CEREMONY */}
-        <div className="w-full flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>
             Religious Ceremony (e.g. Islamic Prayer Times, please write clearly)
           </label>
@@ -191,12 +191,12 @@ const Form = ({ rounded, formData, handleChange }) => {
         </div>
       </div>
       {/** PART 2 - CONTACT INFORMATION */}
-      <div className="flex flex-col gap-8 mt-8">
-        <p className="text-[1.5em] mt-8 font-medium">
+      <div className="p-5 lg:p-0 flex flex-col gap-4 lg:mt-8">
+        <p className="text-[24px] font-medium text-center lg:text-start">
           Part 2: Contact Information
         </p>
         {/** EMAIL */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>Email</label>
           <input
             type="text"
@@ -207,9 +207,9 @@ const Form = ({ rounded, formData, handleChange }) => {
             className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  placeholder:text-[rgba(130,130,130,1)]"
           />
         </div>
-        {/** PHONE */}
-        <div className="flex gap-1 justify-between font-medium">
-          <div className="flex flex-col gap-1 w-[30%]">
+        {/** PHONE - LAYER */}
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between w-full">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Phone</label>
             <input
               type="text"
@@ -217,10 +217,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="phone"
               value={phone}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Facebook</label>
             <input
               type="text"
@@ -228,10 +228,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="facebook"
               value={facebook}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Instagram</label>
             <input
               type="text"
@@ -239,21 +239,21 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="instagram"
               value={instagram}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
         </div>
-        {/** WHATSAPP */}
-        <div className="flex gap-1 justify-between font-medium">
-          <div className="flex flex-col gap-1 w-[30%]">
+        {/** WHATSAPP - LAYER */}
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between w-full">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Whatsapp</label>
             <input
               type="text"
               placeholder="Jane"
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px]  placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Line ID</label>
             <input
               type="text"
@@ -261,10 +261,10 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="lineID"
               value={lineID}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 w-[30%]">
+          <div className="flex flex-col gap-1 font-medium lg:w-[31%]">
             <label>Others</label>
             <input
               type="text"
@@ -272,13 +272,13 @@ const Form = ({ rounded, formData, handleChange }) => {
               name="others"
               value={others}
               onChange={handleChange}
-              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 min-w-[295px] placeholder:text-[rgba(130,130,130,1)]"
+              className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2 placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
         </div>
-        {/** EMERGENCY CONTACT */}
-        <div className="flex gap-10 justify-between font-medium">
-          <div className="flex flex-col gap-1 w-[50%]">
+        {/** EMERGENCY CONTACT - LAYER */}
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:justify-between w-full">
+          <div className="flex flex-col gap-1 font-medium  w-full lg:w-[48%]">
             <label>Contact for Emergency</label>
             <input
               type="text"
@@ -289,7 +289,7 @@ const Form = ({ rounded, formData, handleChange }) => {
               className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  placeholder:text-[rgba(130,130,130,1)]"
             />
           </div>
-          <div className="flex flex-col gap-1 w-[50%]">
+          <div className="flex flex-col gap-1 font-medium  w-full lg:w-[48%]">
             <label>Phone Number for Emergency</label>
             <input
               type="text"
@@ -303,11 +303,11 @@ const Form = ({ rounded, formData, handleChange }) => {
         </div>
       </div>
       {/** PART 3 - MMEDICAL INFORMATION */}
-      <div className="flex flex-col gap-8 mt-8">
-        <p className="text-[1.5em] mt-8 font-medium">
+      <div className="p-5 lg:p-0 flex flex-col gap-4 lg:mt-8">
+        <p className="text-[24px] font-medium text-center lg:text-start">
           Part 3: Medical Information
         </p>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>Medical Condition</label>
           <input
             type="text"
@@ -318,7 +318,7 @@ const Form = ({ rounded, formData, handleChange }) => {
             className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  placeholder:text-[rgba(130,130,130,1)]"
           />
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>Medication and Medical Requirement</label>
           <input
             type="text"
@@ -329,7 +329,7 @@ const Form = ({ rounded, formData, handleChange }) => {
             className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  placeholder:text-[rgba(130,130,130,1)]"
           />
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>Allergy</label>
           <input
             type="text"
@@ -340,7 +340,7 @@ const Form = ({ rounded, formData, handleChange }) => {
             className="border-[1px] outline-none border-[rgba(224,224,224,1)] rounded-lg py-3 px-2  placeholder:text-[rgba(130,130,130,1)]"
           />
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 font-medium ">
           <label>Dietary Limitation</label>
           <input
             type="text"
