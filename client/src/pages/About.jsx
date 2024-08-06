@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import President from "../images/President.png";
+import President from "../images/President.jpg";
 
 const About = () => {
 
