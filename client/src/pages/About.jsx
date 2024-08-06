@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <div className='mt-[15em] w-screen h-screen flex flex-col items-center'>
-      <div className='w-[75vw] h-auto'>
+      <div className='w-full max-w-screen-lg mx-auto'>
         <section>
           <p className='text-7xl font-bold text-center lg:text-start'>About SIMPIC</p>
           <div className='flex flex-col gap-4 mt-[4em] text-[20px] text-[rgba(0,0,0,1)] font-extralight text-center lg:text-start'>
@@ -41,11 +41,11 @@ const About = () => {
 
       <section className='w-full flex justify-center mt-[4em]'>
         <div className='w-full flex justify-center'>
-          <img src={SIMPICHis} alt="SIMPICHis" className="w-full max-w-[1500px] h-auto object-cover" />
+          <img src={SIMPICHis} alt="SIMPICHis" className="w-[80vw] h-auto object-cover" />
         </div>
       </section>
 
-      <div className='w-[75vw] h-auto mt-[10em]'>
+      <div className='w-full max-w-screen-lg mx-auto mt-[10em]'>
         <section className='flex flex-wrap-reverse lg:flex-nowrap justify-center items-center'>
           <div className='lg:w-[70%] mt-[4em] lg:mt-0'>
             <p className='text-7xl font-bold text-center lg:text-start'>President Message</p>
@@ -130,7 +130,7 @@ const About = () => {
               </p>
           </div>
           <div 
-              className={`transition-all duration-300 ease-in-out mb-[15em] w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2021 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
+              className={`transition-all duration-300 ease-in-out w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2021 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
               onClick={() => changeDisplay("simpic2021")}
           >
               <p className='flex items-center text-[24px] font-bold'>SIMPIC2021</p>
