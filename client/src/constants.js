@@ -240,7 +240,7 @@ export const faqs = [
         id: "f5"
     },
     {
-        question: "Can participants modify their registration details, such as team composition or accommodation preferences, after they have registered?",
+        question: "Can participants modify their registration details, such as accommodation preferences, after they have registered?",
         answer: "Participants are welcome to modify their registration details, including team composition and accommodation preferences, before finalizing and submitting their application. It's important to review and ensure accuracy before hitting the submit button, as changes cannot be accommodated after submission.",
         id: "f6"
     },
