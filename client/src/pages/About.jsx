@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import President from "../images/President.png";
 
 const About = () => {
 
@@ -81,7 +82,9 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className='w-[512px] h-[703px] bg-[rgba(130,130,130,1)]'></div>
+                <div className='w-[512px] h-[703px] flex justify-center items-center'>
+                  <img src={President} alt="President" className="w-full h-full object-cover" />
+                </div>
             </section>  
             <section className='flex flex-col mt-[10em]'>
                 <p className='text-7xl font-bold'>History</p>
