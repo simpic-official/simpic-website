@@ -78,13 +78,13 @@ const About = () => {
           </div>
         </section>
 
-        <section className='flex flex-col mt-[10em]'>
-          <p className='text-7xl font-bold'>History</p>
-          <div className='w-[75vw] max-w-[512px] h-auto flex justify-center items-center'>
+        <section className='flex flex-col mt-[10em] items-center'>
+          <p className='text-7xl font-bold mb-[2em]'>History</p>
+          <div className='w-full flex justify-center'>
             <img 
               src={SIMPICHis} 
               alt="SIMPICHis" 
-              className="w-auto max-w-[65%] h-auto object-cover" 
+              className="w-[65%] max-w-[1200px] h-auto object-cover"
             />
           </div>
           <div className='flex flex-col items-center mt-[3em] gap-5'>
