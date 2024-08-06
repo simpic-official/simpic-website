@@ -181,19 +181,19 @@ export const activities = [
 export const resources = [
     {
         type: 'COMPETITION',
-        title: 'Article Name - headline for an article'
+        title: 'Rulebook'
     },
     {
         type: 'REGISTRATION',
-        title: 'How to Register'
+        title: 'Registration Guide'
     },
     {
         type: 'REGISTRATION',
-        title: 'Article Name - headline for an article'
+        title: 'Invitation Package'
     },
     {
         type: 'GUIDEBOOK',
-        title: 'Article Name - headline for an article'
+        title: 'Coming Soon'
     },
     {
         type: 'PANDEMOS',
