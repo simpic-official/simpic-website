@@ -153,27 +153,27 @@ export const schedulesDay4 = [
 export const activities = [
     {
         title: "Welcome Dinner",
-        description: "dinner on the cruise which everyone seem to be excited the most",
+        description: "Join us for a delightful dinner cruise with great food and beautiful views",
         bg: "rgba(217,217,217,1)"
     },
     {
         title: "Conference",
-        description: "Just a boring lecture",
+        description: "Engage in insightful lectures and discussions with peers",
         bg: "rgba(255,171,171,1)"
     },
     {
         title: "Night Party",
-        description: "EDM night bye bye for those who lose",
+        description: "Celebrate with an electrifying EDM night of music and dance",
         bg: "rgba(137,146,224,1)"
     },
     {
         title: "Museum Tour",
-        description: "beautiful ancient medical school",
+        description: "Explore the rich history of our ancient medical school on a guided tour",
         bg: "rgba(243,177,61,1)"
     },
     {
         title: "Cultural Excursion",
-        description: "adventure in bagnkok",
+        description: "Experience Bangkok's vibrant culture on this exciting adventure",
         bg: "rgba(236,216,150,1)"
     }
 ]
@@ -197,19 +197,19 @@ export const resources = [
     },
     {
         type: 'PANDEMOS',
-        title: 'Article Name - headline for an article'
+        title: 'The Last but not Least'
     },
     {
         type: 'PANDEMOS',
-        title: 'Article Name - headline for an article'
+        title: 'Antibody and B-Lymphocyte'
     },
     {
         type: 'PANDEMOS',
-        title: 'Article Name - headline for an article'
+        title: 'Into a small world'
     },
     {
         type: 'PANDEMOS',
-        title: 'Article Name - headline for an article'
+        title: 'The New Chapter 2024'
     }
 ]
 
