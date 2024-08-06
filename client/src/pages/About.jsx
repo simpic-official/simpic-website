@@ -92,10 +92,10 @@ const About = () => {
         </section>
 
         {/* History Section */}
-        <section className='flex flex-col mt-[10em]'>
+        <section className='flex flex-col mt-[10em] items-center'>
           <p className='text-7xl font-bold text-center'>History</p>
-          <div className='w-[75vw] max-w-[512px] h-[703px] flex justify-center items-center'>
-            <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-full object-cover" />
+          <div className='w-[65%] max-w-[512px] h-auto flex justify-center items-center mt-[3em]'>
+            <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-auto object-cover" />
           </div>
           <div className='flex flex-col items-center mt-[3em] gap-5'>
             {historyItems.map(item => (
