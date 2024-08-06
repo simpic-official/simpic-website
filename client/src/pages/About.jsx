@@ -73,7 +73,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className='flex flex-col mt-[5em] mb-[5em]'>
+        <section className='flex flex-col mt-[5em] mb-[2em]'>
           <h1 className='text-7xl font-bold text-center mb-[2em]'>Our History</h1>
           <div className='w-full flex flex-col items-center'>
             <div className='w-[80%] max-w-[512px]'>
