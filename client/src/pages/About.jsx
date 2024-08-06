@@ -67,7 +67,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className='w-[720px] flex justify-center items-center'>
+          <div className='w-[512px] flex justify-center items-center'>
             <img src={President} alt='President' className='w-full object-cover' />
           </div>
         </section>
