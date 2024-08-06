@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import President from "../images/President.jpg";
+import SIMPICHis from "../images/SIMPICHis.png";
 
 const About = () => {
 
@@ -85,7 +86,11 @@ const About = () => {
                 <div className='w-[512px] h-[703px] flex justify-center items-center'>
                   <img src={President} alt="President" className="w-full h-full object-cover" />
                 </div>
-            </section>  
+            <section>
+            <div className='w-[75vw] max-w-[512px] h-[703px] flex justify-center items-center'>
+              <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-full object-cover" />
+            </div>
+
             <section className='flex flex-col mt-[10em]'>
                 <p className='text-7xl font-bold'>History</p>
                 <div className='flex flex-col items-center mt-[3em] gap-5'>
