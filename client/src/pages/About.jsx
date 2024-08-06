@@ -88,16 +88,12 @@ const About = () => {
                 </div>
             <section>
               
-            <section className='py-10 flex justify-center'>
-              {/* Container for the image */}
-              <div className='w-[75vw] max-w-[512px] h-[703px] flex justify-center items-center'>
-                <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-full object-cover" />
-                </div>
-            </section>
-
 
             <section className='flex flex-col mt-[10em]'>
                 <p className='text-7xl font-bold'>History</p>
+                <div className='w-[75vw] max-w-[512px] h-[703px] flex justify-center items-center'>
+                  <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-full object-cover" />
+                </div>
                 <div className='flex flex-col items-center mt-[3em] gap-5'>
                     <div 
                         className={`transition-all duration-300 ease-in-out w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2024 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
