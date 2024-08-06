@@ -79,4 +79,17 @@ const About = () => {
             <div className='w-[80%] max-w-[512px]'>
               <img src={SIMPICHis1} alt='SIMPIC History 1' className='w-full object-cover' />
             </div>
-            <div className='w-[80%] max-w-[512px
+            <div className='w-[80%] max-w-[512px]'>
+              <img src={SIMPICHis2} alt='SIMPIC History 2' className='w-full object-cover' />
+            </div>
+            <div className='w-[80%] max-w-[512px]'>
+              <img src={SIMPICHis3} alt='SIMPIC History 3' className='w-full object-cover' />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default About;
