@@ -72,15 +72,15 @@ const About = () => {
           </div>
         </section>
         <section className='flex flex-col mt-[10em] mb-[5em]'>
-          <h1 className='text-7xl font-bold text-center'>History of SIMPIC</h1>
-          <div className='w-full flex flex-col items-center mt-[4em]'>
+          <h1 className='text-7xl font-bold text-center mb-[2em]'>History of SIMPIC</h1>
+          <div className='w-full flex flex-col items-center'>
             <div className='w-[80%] max-w-[512px]'>
               <img src={SIMPICHis1} alt='SIMPIC History 1' className='w-full object-cover' />
             </div>
-            <div className='w-[80%] max-w-[512px] mt-[2em]'>
+            <div className='w-[80%] max-w-[512px]'>
               <img src={SIMPICHis2} alt='SIMPIC History 2' className='w-full object-cover' />
             </div>
-            <div className='w-[80%] max-w-[512px] mt-[2em]'>
+            <div className='w-[80%] max-w-[512px]'>
               <img src={SIMPICHis3} alt='SIMPIC History 3' className='w-full object-cover' />
             </div>
           </div>
