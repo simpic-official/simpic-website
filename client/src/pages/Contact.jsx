@@ -11,46 +11,17 @@ const Contact = () => {
     message: "",
   });
 
-  const [openFaqs, setOpenFaqs] = useState({
-    f1: false,
-    f2: false,
-    f3: false,
-    f4: false,
-    f5: false,
-    f6: false,
-    f7: false,
-    f8: false,
-    f9: false,
-  });
+  const [openFaqs, setOpenFaqs] = useState({});
 
   const openFaqsHandler = (id) => {
-    if (id === "f1") {
-      setOpenFaqs({ ...openFaqs, f1: !openFaqs.f1 });
-      console.log(openFaqs);
-    } else if (id === "f2") {
-      setOpenFaqs({ ...openFaqs, f2: !openFaqs.f2 });
-    } else if (id === "f3") {
-      setOpenFaqs({ ...openFaqs, f3: !openFaqs.f3 });
-    } else if (id === "f4") {
-      setOpenFaqs({ ...openFaqs, f4: !openFaqs.f4 });
-    } else if (id === "f5") {
-      setOpenFaqs({ ...openFaqs, f5: !openFaqs.f5 });
-    } else if (id === "f6") {
-      setOpenFaqs({ ...openFaqs, f6: !openFaqs.f6 });
-    } else if (id === "f7") {
-      setOpenFaqs({ ...openFaqs, f7: !openFaqs.f7 });
-    } else if (id === "f8") {
-      setOpenFaqs({ ...openFaqs, f8: !openFaqs.f8 });
-    } else if (id === "f9") {
-      setOpenFaqs({ ...openFaqs, f9: !openFaqs.f9 });
-    }
+    setOpenFaqs((prevState) => ({ ...prevState, [id]: !prevState[id] }));
   };
 
   const submitFormHandler = (e) => {
     e.preventDefault();
 
     const contactData = new FormData(e.target);
-
+    // Handle form data, e.g., send to API
   };
 
   return (
@@ -61,14 +32,16 @@ const Contact = () => {
           onSubmit={submitFormHandler}
         >
           <p className="text-6xl font-bold text-center lg:text-start w-full lg:w-auto">Contact us</p>
-          <p className=" text-lg lg:text-2xl text-[rgba(130,130,130,1)] font-light">
+          <p className="text-lg lg:text-2xl text-[rgba(130,130,130,1)] font-light">
             Subheading for description or instructions
           </p>
           <div className="flex flex-col lg:flex-row gap-6 w-full">
             <div className="flex flex-col gap-2 w-full lg:w-[50%]">
-              <label>First name</label>
+              <label htmlFor="firstName">First name</label>
               <input
-                placeholder="John"
+                id="firstName"
+                name="firstName"
+                placeholder="SIM"
                 value={data.firstName}
                 onChange={(e) =>
                   setData({ ...data, firstName: e.target.value })
@@ -77,9 +50,11 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col gap-2 w-full lg:w-[50%]">
-              <label>Last name</label>
+              <label htmlFor="lastName">Last name</label>
               <input
-                placeholder="Doe"
+                id="lastName"
+                name="lastName"
+                placeholder="PIC"
                 value={data.lastName}
                 onChange={(e) => setData({ ...data, lastName: e.target.value })}
                 className="border-[1px] border-[rgba(224,224,224,1)] px-4 py-2 rounded-lg text-[rgba(130,130,130,1)] text-[16px] outline-none"
@@ -87,17 +62,21 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex flex-col gap-2 w-full">
-            <label>Email address</label>
+            <label htmlFor="email">Email address</label>
             <input
-              placeholder="johndoe@gmail.com"
+              id="email"
+              name="email"
+              placeholder="simpic@gmail.com"
               value={data.email}
               onChange={(e) => setData({ ...data, email: e.target.value })}
               className="border-[1px] border-[rgba(224,224,224,1)] px-4 py-2 rounded-lg text-[rgba(130,130,130,1)] text-[16px] outline-none"
             />
           </div>
           <div className="flex flex-col gap-2 w-full">
-            <label>Your message</label>
+            <label htmlFor="message">Your message</label>
             <textarea
+              id="message"
+              name="message"
               placeholder="Enter your question or message"
               value={data.message}
               onChange={(e) => setData({ ...data, message: e.target.value })}
@@ -112,7 +91,7 @@ const Contact = () => {
           </button>
         </form>
         <div className="bg-cover w-[90%] lg:w-auto flex justify-center">
-          <img src={orange} alt="wallpaper"/>
+          <img src={orange} alt="wallpaper" />
         </div>
       </div>
       <div className="w-[75%] flex justify-between mt-[5em] flex-col gap-4">
@@ -123,6 +102,7 @@ const Contact = () => {
             faq={faq}
             openFaqsHandler={openFaqsHandler}
             openFaqs={openFaqs}
+            aria-expanded={openFaqs[faq.id]}
           />
         ))}
       </div>
