@@ -87,9 +87,14 @@ const About = () => {
                   <img src={President} alt="President" className="w-full h-full object-cover" />
                 </div>
             <section>
-            <div className='w-[75vw] max-w-[512px] h-[703px] flex justify-center items-center'>
-              <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-full object-cover" />
-            </div>
+              
+            <section className='py-10 flex justify-center'>
+              {/* Container for the image */}
+              <div className='w-[75vw] max-w-[512px] h-[703px] flex justify-center items-center'>
+                <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-full object-cover" />
+                </div>
+            </section>
+
 
             <section className='flex flex-col mt-[10em]'>
                 <p className='text-7xl font-bold'>History</p>
