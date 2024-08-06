@@ -39,9 +39,9 @@ const About = () => {
         </section>
       </div>
 
-      <section className='w-full flex justify-center mt-[4em]'>
-        <div className='w-full flex justify-center'>
-          <img src={SIMPICHis} alt="SIMPICHis" className="w-[80vw] h-auto object-cover" />
+      <section className='w-full flex justify-center mt-[6em]'>
+        <div className='w-[720px] flex justify-center'>
+          <img src={SIMPICHis} alt="SIMPICHis" className="w-full h-auto object-cover" />
         </div>
       </section>
 
