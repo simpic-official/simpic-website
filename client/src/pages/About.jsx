@@ -40,8 +40,8 @@ const About = () => {
       </div>
 
       <section className='w-full flex justify-center mt-[4em]'>
-        <div className='w-[100vw] flex justify-center'>
-          <img src={SIMPICHis} alt="SIMPICHis" className="w-full max-w-[90%] h-auto object-cover" />
+        <div className='w-full flex justify-center'>
+          <img src={SIMPICHis} alt="SIMPICHis" className="w-full max-w-[1500px] h-auto object-cover" />
         </div>
       </section>
 
