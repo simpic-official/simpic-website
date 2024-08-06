@@ -1,6 +1,6 @@
 import React from 'react'
 import RefMat from "../images/RefMat.png";
-import IP from "../images/IP.png";
+import Prize from "../images/IP.png";
 
 const Competition = () => {
   return (
