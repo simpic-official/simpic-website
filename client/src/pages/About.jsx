@@ -68,13 +68,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className='w-[512px] h-[703px] flex justify-center items-center'>
+          <div className='w-[400px] h-[560px] flex justify-center items-center lg:w-[512px] lg:h-[703px]'>
             <img src={President} alt="President" className="w-full h-full object-cover" />
           </div>
         </section>
 
-        <section className='flex flex-col mt-[10em] mb-[5em]'>
-          <h1 className='text-7xl font-bold text-center mb-[2em]'>History of SIMPIC</h1>
+        <section className='flex flex-col mt-[5em] mb-[5em]'>
+          <h1 className='text-7xl font-bold text-center mb-[2em]'>Our History</h1>
           <div className='w-full flex flex-col items-center'>
             <div className='w-[80%] max-w-[512px]'>
               <img src={SIMPICHis1} alt='SIMPIC History 1' className='w-full object-cover' />
