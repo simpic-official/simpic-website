@@ -16,6 +16,11 @@ const Contact = () => {
     f2: false,
     f3: false,
     f4: false,
+    f5: false,
+    f6: false,
+    f7: false,
+    f8: false,
+    f9: false,
   });
 
   const openFaqsHandler = (id) => {
@@ -28,6 +33,16 @@ const Contact = () => {
       setOpenFaqs({ ...openFaqs, f3: !openFaqs.f3 });
     } else if (id === "f4") {
       setOpenFaqs({ ...openFaqs, f4: !openFaqs.f4 });
+    } else if (id === "f5") {
+      setOpenFaqs({ ...openFaqs, f5: !openFaqs.f5 });
+    } else if (id === "f6") {
+      setOpenFaqs({ ...openFaqs, f6: !openFaqs.f6 });
+    } else if (id === "f7") {
+      setOpenFaqs({ ...openFaqs, f7: !openFaqs.f7 });
+    } else if (id === "f8") {
+      setOpenFaqs({ ...openFaqs, f8: !openFaqs.f8 });
+    } else if (id === "f9") {
+      setOpenFaqs({ ...openFaqs, f9: !openFaqs.f9 });
     }
   };
 
