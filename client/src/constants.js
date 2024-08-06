@@ -185,7 +185,7 @@ export const resources = [
     },
     {
         type: 'REGISTRATION',
-        title: 'Article Name - headline for an article'
+        title: 'How to Register'
     },
     {
         type: 'REGISTRATION',
@@ -236,7 +236,7 @@ export const faqs = [
     },
     {
         question: "Are there any requirements or essays needed in order to join the competition?",
-        answer: "Only a letter of approval (or "statement") and PDPA consent are required for SIMPIC registration which can be downloaded from the website.",
+        answer: "Only a letter of approval (or statement) and PDPA consent are required for SIMPIC registration which can be downloaded from the website.",
         id: "f5"
     },
     {
