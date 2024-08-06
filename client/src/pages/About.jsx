@@ -3,10 +3,15 @@ import President from "../images/President.jpg";
 import SIMPICHis from "../images/SIMPICHis.png";
 
 const About = () => {
-  const [open, setOpen] = useState({simpic2024: false, simpic2023: false, simpic2022: false, simpic2021: false});
+  const [open, setOpen] = useState({
+    simpic2024: false,
+    simpic2023: false,
+    simpic2022: false,
+    simpic2021: false
+  });
 
   const changeDisplay = (id) => {
-    setOpen({...open, [id]: !open[id]});
+    setOpen(prevOpen => ({ ...prevOpen, [id]: !prevOpen[id] }));
   };
 
   return (
@@ -129,4 +134,17 @@ const About = () => {
               onClick={() => changeDisplay("simpic2021")}
           >
               <p className='flex items-center text-[24px] font-bold'>SIMPIC2021</p>
-              <p className={`${open
+              <p className={`${open.simpic2021 ? "w-[1px] h-[80px] bg-black" : "hidden"}`}></p>
+              <p className={`${open.simpic2021 ? "block text-xs lg:text-md" : "hidden"}`}>
+                  Journey into a small world of
+                  <br/>microbio,
+                  <br/>immuno, and parasito
+              </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
