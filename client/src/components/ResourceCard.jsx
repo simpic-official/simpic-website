@@ -6,7 +6,7 @@ const ResourceCard = ({ slide }) => {
 
   return (
     <div className='h-[365px] flex flex-col justify-end relative drop-shadow-xl rounded-lg'>
-        <div className='bg-[#D9D9D9] w-full h-full rounded-lg'>
+        <div className='bg-[#D9D9D9] w-full h-full rounded-lg overflow-hidden'>
           <img src={img} className=''/>
         </div>
         <div className='bg-white rounded-lg absolute bottom-0 w-full h-[55%] p-4 flex flex-col items-start gap-4'>
