@@ -13,44 +13,53 @@ import invitationpackage from './images/invitationpackage.png'
 export const schedulesDay1 = [
     {
         col1: "Registration",
-        col2: "9:00 AM",
+        col2: "09:00 AM",
         col3: "12:00 PM"
     },
     {
         col1: "Lunch",
         col2: "12:00 PM",
-        col3: "1:00 PM"
+        col3: "01:00 PM"
     },
     {
         col1: "Opening Ceremony",
-        col2: "1:00 PM",
-        col3: "2:30 PM"
+        col2: "01:00 PM",
+        col3: "02:30 PM"
     },
     {
         col1: "Recreational Activity",
-        col2: "2:30 PM",
-        col3: "6:30 PM"
+        col2: "02:30 PM",
+        col3: "06:30 PM"
     },
     {
         col1: "Welcome Dinner",
-        col2: "6:30 PM",
-        col3: "9:30 PM"
+        col2: "06:30 PM",
+        col3: "09:30 PM"
     },
 ]
 
 export const schedulesDay2 = [
     {
         col1: "Examination Round 1 / Conference",
-        col2: "9:00 AM",
+        col2: "09:00 AM",
         col3: "12:00 PM"
     },
-    
+    {
+        col1: "Conference",
+        col2: "09:30 AM",
+        col3: "11:30 AM",
+    },
+    {
+        col1: "Lunch",
+        col2: "11:30 AM",
+        col3: "01:30 PM"
+    }
 ]
 
 export const schedulesDay3 = [
     {
         col1: "Examination Round 2",
-        col2: "9:00 AM",
+        col2: "09:00 AM",
         col3: "10:30 AM"
     },
     {
@@ -61,21 +70,21 @@ export const schedulesDay3 = [
     {
         col1: "Lunch",
         col2: "12:00 PM",
-        col3: "1:30 PM"
+        col3: "01:30 PM"
     },
     {
         col1: "Final Round Examination",
-        col2: "1:30 PM",
-        col3: "4:30 PM"
+        col2: "01:30 PM",
+        col3: "04:30 PM"
     },
     {
         col1: "Closing Ceremony",
-        col2: "4:30 PM",
-        col3: "5:30 PM"
+        col2: "04:30 PM",
+        col3: "05:30 PM"
     },
     {
         col1: "Farewell Party",
-        col2: "6:00 PM",
+        col2: "06:00 PM",
         col3: "10:00 PM"
     },
 ]
@@ -83,8 +92,8 @@ export const schedulesDay3 = [
 export const schedulesDay4 = [
     {
         col1: "Cultural Excursion",
-        col2: "9:00 AM",
-        col3: "3:30 PM"
+        col2: "09:00 AM",
+        col3: "03:30 PM"
     },
 ]
 
