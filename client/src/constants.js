@@ -1,180 +1,123 @@
+import dinner from './images/drive/dinner.jpg'
+import conference from './images/drive/conference2.jpg'
+import party from './images/drive/party2.jpg'
+import tour from './images/drive/recreational2.jpg'
+import cultural from './images/drive/cultural.jpg'
+import pandemos1 from './images/pandemos1.png'
+import pandemos2 from './images/pandemos2.png'
+import pandemos3 from './images/pandemos3.png'
+import pandemos4 from './images/pandemos4.png'
+import pandemos5 from './images/pandemos5.png'
+import invitationpackage from './images/invitationpackage.png'
+
 export const schedulesDay1 = [
     {
-        col1: "Row 1",
-        col2: "123",
-        col3: "456"
+        col1: "Registration",
+        col2: "9:00 AM",
+        col3: "12:00 PM"
     },
     {
-        col1: "Row 2",
-        col2: "123",
-        col3: "456"
+        col1: "Lunch",
+        col2: "12:00 PM",
+        col3: "1:00 PM"
     },
     {
-        col1: "Row 3",
-        col2: "123",
-        col3: "456"
+        col1: "Opening Ceremony",
+        col2: "1:00 PM",
+        col3: "2:30 PM"
     },
     {
-        col1: "Row 4",
-        col2: "123",
-        col3: "456"
+        col1: "Recreational Activity",
+        col2: "2:30 PM",
+        col3: "6:30 PM"
     },
     {
-        col1: "Row 5",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 6",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 7",
-        col2: "123",
-        col3: "456"
+        col1: "Welcome Dinner",
+        col2: "6:30 PM",
+        col3: "9:30 PM"
     },
 ]
 
 export const schedulesDay2 = [
     {
-        col1: "Row 1",
-        col2: "123",
-        col3: "456"
+        col1: "Examination Round 1 / Conference",
+        col2: "9:00 AM",
+        col3: "12:00 PM"
     },
-    {
-        col1: "Row 2",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 3",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 4",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 5",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 6",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 7",
-        col2: "123",
-        col3: "456"
-    },
+    
 ]
 
 export const schedulesDay3 = [
     {
-        col1: "Row 1",
-        col2: "123",
-        col3: "456"
+        col1: "Examination Round 2",
+        col2: "9:00 AM",
+        col3: "10:30 AM"
     },
     {
-        col1: "Row 2",
-        col2: "123",
-        col3: "456"
+        col1: "Examination Round 3",
+        col2: "10:30 AM",
+        col3: "11:30 AM"
     },
     {
-        col1: "Row 3",
-        col2: "123",
-        col3: "456"
+        col1: "Lunch",
+        col2: "12:00 PM",
+        col3: "1:30 PM"
     },
     {
-        col1: "Row 4",
-        col2: "123",
-        col3: "456"
+        col1: "Final Round Examination",
+        col2: "1:30 PM",
+        col3: "4:30 PM"
     },
     {
-        col1: "Row 5",
-        col2: "123",
-        col3: "456"
+        col1: "Closing Ceremony",
+        col2: "4:30 PM",
+        col3: "5:30 PM"
     },
     {
-        col1: "Row 6",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 7",
-        col2: "123",
-        col3: "456"
+        col1: "Farewell Party",
+        col2: "6:00 PM",
+        col3: "10:00 PM"
     },
 ]
 
 export const schedulesDay4 = [
     {
-        col1: "Row 1",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 2",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 3",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 4",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 5",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 6",
-        col2: "123",
-        col3: "456"
-    },
-    {
-        col1: "Row 7",
-        col2: "123",
-        col3: "456"
+        col1: "Cultural Excursion",
+        col2: "9:00 AM",
+        col3: "3:30 PM"
     },
 ]
 
 export const activities = [
     {
         title: "Welcome Dinner",
-        description: "Join us for a delightful dinner cruise with great food and beautiful views",
-        bg: "rgba(217,217,217,1)"
+        description: "Join us for a delightful dinner cruise with beautiful views",
+        bg: "rgba(217,217,217,1)",
+        img: dinner,
     },
     {
         title: "Conference",
         description: "Engage in insightful lectures and discussions with peers",
-        bg: "rgba(255,171,171,1)"
+        bg: "rgba(255,171,171,1)",
+        img: conference,
     },
     {
         title: "Night Party",
         description: "Celebrate with an electrifying EDM night of music and dance",
-        bg: "rgba(137,146,224,1)"
+        bg: "rgba(137,146,224,1)",
+        img: party,
     },
     {
         title: "Museum Tour",
-        description: "Explore the rich history of our ancient medical school on a guided tour",
-        bg: "rgba(243,177,61,1)"
+        description: "Explore the history of our medical school on a guided tour",
+        bg: "rgba(243,177,61,1)",
+        img: tour,
     },
     {
         title: "Cultural Excursion",
-        description: "Experience Bangkok's vibrant culture on this exciting adventure",
-        bg: "rgba(236,216,150,1)"
+        description: "Experience Bangkok's culture on this exciting adventure",
+        bg: "rgba(236,216,150,1)",
+        img: cultural,
     }
 ]
 
@@ -197,19 +140,27 @@ export const resources = [
     },
     {
         type: 'PANDEMOS',
-        title: 'The Last but not Least'
+        title: 'The Last but not Least',
+        img: pandemos1,
+        link: "https://pubhtml5.com/oppcd/mlet/",
     },
     {
         type: 'PANDEMOS',
-        title: 'Antibody and B-Lymphocyte'
+        title: 'Antibody and B-Lymphocyte',
+        img: pandemos5,
+        link: "https://pubhtml5.com/iyspj/jwyp/"
     },
     {
         type: 'PANDEMOS',
-        title: 'Into a small world'
+        title: 'Into a small world',
+        img: pandemos3,
+        link: "https://pubhtml5.com/eynem/ftkv/"
     },
     {
         type: 'PANDEMOS',
-        title: 'The New Chapter 2024'
+        title: 'The New Chapter 2024',
+        img: pandemos4,
+        link: "https://online.pubhtml5.com/xylph/rjdf/"
     }
 ]
 

@@ -45,7 +45,7 @@ const Resources = () => {
         <p className="text-6xl font-bold text-start">Resources</p>
         <div className="w-full flex flex-wrap-reverse md:flex-row justify-center lg:justify-between bg-[rgba(230,230,230,1)] p-3 lg:p-6 rounded-lg mt-[3em] drop-shadow-lg">
           <div className="flex flex-col items-center lg:items-start justify-center lg:gap-8 w-full lg:w-auto">
-            <p className="text-2xl mt-3 lg:mt-0 lg:text-4xl font-bold">Guidebook is available now</p>
+            <p className="text-2xl mt-3 lg:mt-0 lg:text-4xl font-bold">Guidebook is coming soon</p>
             <p className="text-md lg:text-2xl font-extralight">
               the ultimate guide to survive in Bangkok
             </p>
