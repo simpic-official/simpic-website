@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import orange from "../images/orange.svg";
+import logo from "../images/simpic_logo.png";
 import { faqs } from "../constants";
 import FaqsCard from "../components/FaqsCard";
 
@@ -28,14 +29,14 @@ const Contact = () => {
     <section className="mt-[10em] w-screen h-screen flex flex-col items-center font-inter">
       <div className="w-full lg:w-[75%] flex flex-wrap lg:flex-nowrap gap-10 justify-center lg:justify-between">
         <form
-          className="flex flex-col items-start gap-8 w-[90%] lg:w-[50%]"
+          className="flex flex-col items-start gap-8 w-[90%] lg:w-[50%] "
           onSubmit={submitFormHandler}
         >
           <p className="text-6xl font-bold text-center lg:text-start w-full lg:w-auto">Contact us</p>
           <p className="text-lg lg:text-2xl text-[rgba(130,130,130,1)] font-light">
             Subheading for description or instructions
           </p>
-          <div className="flex flex-col lg:flex-row gap-6 w-full">
+          <div className="flex flex-col lg:flex-row gap-6 w-[95%]">
             <div className="flex flex-col gap-2 w-full lg:w-[50%]">
               <label htmlFor="firstName">First name</label>
               <input
@@ -90,8 +91,8 @@ const Contact = () => {
             Submit
           </button>
         </form>
-        <div className="bg-cover w-[90%] lg:w-auto flex justify-center">
-          <img src={orange} alt="wallpaper" />
+        <div className="bg-cover w-[90%] lg:w-auto flex justify-center max-w-[500px]">
+          <img src={logo} alt="wallpaper" className="object-contain" />
         </div>
       </div>
       <div className="w-[75%] flex justify-between mt-[5em] flex-col gap-4">

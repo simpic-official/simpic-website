@@ -77,23 +77,23 @@ const Program = () => {
           <div>
             {selectDay.day1 && (
               <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-b-lg rounded-r-lg">
-                <div className="w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
                   18 Jan 2025
-                  <div className="grid grids-cols-1 divide-y mt-4 h-[80%]">
+                  <div className="grid grids-cols-1 divide-y mt-4 gap-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
-                      <p>col1</p>
-                      <div className="flex gap-8">
-                        <p>col2</p>
-                        <p>col3</p>
+                      <p>Activity</p>
+                      <div className="flex gap-10 md:gap-20">
+                        <p>Start</p>
+                        <p>End</p>
                       </div>
                     </div>
                     {schedulesDay1.map((schedule) => {
                       const { col1, col2, col3 } = schedule;
                       return (
-                        <div className="flex justify-between text-black items-center">
+                        <div className="flex justify-between text-black items-center pt-4">
                           <p>{col1}</p>
-                          <div className="flex gap-8">
-                            <p>{col2}</p>
+                          <div className="flex gap-2 md:gap-10">
+                            <p className="">{col2}</p>
                             <p>{col3}</p>
                           </div>
                         </div>
@@ -105,22 +105,22 @@ const Program = () => {
             )}
             {selectDay.day2 && (
               <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-lg">
-                <div className="w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
                   19 Jan 2025
-                  <div className="grid grids-cols-1 divide-y mt-4 h-[80%]">
+                  <div className="grid grids-cols-1 divide-y mt-4 gap-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
-                      <p>col1</p>
-                      <div className="flex gap-8">
-                        <p>col2</p>
-                        <p>col3</p>
+                      <p>Activity</p>
+                      <div className="flex gap-10 md:gap-20">
+                        <p>Start</p>
+                        <p>End</p>
                       </div>
                     </div>
                     {schedulesDay2.map((schedule) => {
                       const { col1, col2, col3 } = schedule;
                       return (
-                        <div className="flex justify-between text-black items-center">
+                        <div className="flex justify-between text-black items-center pt-4">
                           <p>{col1}</p>
-                          <div className="flex gap-8">
+                          <div className="flex gap-2 md:gap-10">
                             <p>{col2}</p>
                             <p>{col3}</p>
                           </div>
@@ -133,12 +133,12 @@ const Program = () => {
             )}
             {selectDay.day3 && (
               <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-lg">
-                <div className="w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
                   20 Jan 2025
-                  <div className="grid grids-cols-1 divide-y mt-4 h-[80%]">
+                  <div className="grid grids-cols-1 divide-y mt-4 gap-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
-                      <p>col1</p>
-                      <div className="flex gap-8">
+                      <p>Activity</p>
+                      <div className="flex gap-10 md:gap-20">
                         <p>col2</p>
                         <p>col3</p>
                       </div>
@@ -146,9 +146,9 @@ const Program = () => {
                     {schedulesDay3.map((schedule) => {
                       const { col1, col2, col3 } = schedule;
                       return (
-                        <div className="flex justify-between text-black items-center">
+                        <div className="flex justify-between text-black items-center pt-4">
                           <p>{col1}</p>
-                          <div className="flex gap-8">
+                          <div className="flex gap-2 md:gap-10">
                             <p>{col2}</p>
                             <p>{col3}</p>
                           </div>
@@ -161,12 +161,12 @@ const Program = () => {
             )}
             {selectDay.day4 && (
               <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-lg">
-                <div className="w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
                   21 Jan 2025
-                  <div className="grid grids-cols-1 divide-y mt-4 h-[80%]">
+                  <div className="grid grids-cols-1 divide-y mt-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
-                      <p>col1</p>
-                      <div className="flex gap-8">
+                      <p>Activity</p>
+                      <div className="flex gap-10 md:gap-20">
                         <p>col2</p>
                         <p>col3</p>
                       </div>
@@ -174,9 +174,9 @@ const Program = () => {
                     {schedulesDay4.map((schedule) => {
                       const { col1, col2, col3 } = schedule;
                       return (
-                        <div className="flex justify-between text-black items-center">
+                        <div className="flex justify-between text-black items-center pt-4">
                           <p>{col1}</p>
-                          <div className="flex gap-8">
+                          <div className="flex gap-2 md:gap-10">
                             <p>{col2}</p>
                             <p>{col3}</p>
                           </div>
