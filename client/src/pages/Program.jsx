@@ -34,9 +34,9 @@ const Program = () => {
         <div className="mt-[5em]">
           <div className="flex gap-4">
             <p
-              className={`${
+              className={`my-2 ${
                 selectDay.day1
-                  ? "text-2xl bg-[rgba(161,162,163,1)] p-4 rounded-t-lg font-semibold"
+                  ? "text-2xl bg-[#d4d6d7] p-4 rounded-lg font-semibold"
                   : "text-2xl p-4 text-[rgba(130,130,130,1)] font-semibold"
               }`}
               onClick={() => handleSelectDay("day1")}
@@ -44,9 +44,9 @@ const Program = () => {
               Day 1
             </p>
             <p
-              className={`${
+              className={`my-2 ${
                 selectDay.day2
-                  ? "text-2xl bg-[rgba(161,162,163,1)] p-4 rounded-t-lg font-semibold"
+                  ? "text-2xl bg-[#d4d6d7] p-4 rounded-lg font-semibold"
                   : "text-2xl p-4 text-[rgba(130,130,130,1)] font-semibold"
               }`}
               onClick={() => handleSelectDay("day2")}
@@ -54,9 +54,9 @@ const Program = () => {
               Day 2
             </p>
             <p
-              className={`${
+              className={`my-2 ${
                 selectDay.day3
-                  ? "text-2xl bg-[rgba(161,162,163,1)] p-4 rounded-t-lg font-semibold"
+                  ? "text-2xl bg-[#d4d6d7] p-4 rounded-lg font-semibold"
                   : "text-2xl p-4 text-[rgba(130,130,130,1)] font-semibold"
               }`}
               onClick={() => handleSelectDay("day3")}
@@ -64,9 +64,9 @@ const Program = () => {
               Day 3
             </p>
             <p
-              className={`${
+              className={`my-2 ${
                 selectDay.day4
-                  ? "text-2xl bg-[rgba(161,162,163,1)] p-4 rounded-t-lg font-semibold"
+                  ? "text-2xl bg-[#d4d6d7] p-4 rounded-lg font-semibold"
                   : "text-2xl p-4 text-[rgba(130,130,130,1)] font-semibold"
               }`}
               onClick={() => handleSelectDay("day4")}
@@ -76,8 +76,8 @@ const Program = () => {
           </div>
           <div>
             {selectDay.day1 && (
-              <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-b-lg rounded-r-lg">
-                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+              <div className="w-full flex justify-center h-fit bg-white rounded-b-lg rounded-r-lg">
+                <div className="w-[100%] border-[1px] border-black p-4 rounded-md">
                   18 Jan 2025
                   <div className="grid grids-cols-1 divide-y mt-4 gap-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
@@ -104,8 +104,8 @@ const Program = () => {
               </div>
             )}
             {selectDay.day2 && (
-              <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-lg">
-                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+              <div className="w-full flex justify-center h-fit bg-white rounded-b-lg rounded-r-lg">
+                <div className="w-[100%] border-[1px] border-black p-4 rounded-md">
                   19 Jan 2025
                   <div className="grid grids-cols-1 divide-y mt-4 gap-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
@@ -132,15 +132,15 @@ const Program = () => {
               </div>
             )}
             {selectDay.day3 && (
-              <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-lg">
-                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+              <div className="w-full flex justify-center h-fit bg-white rounded-b-lg rounded-r-lg">
+                <div className="w-[100%] border-[1px] border-black p-4 rounded-md">
                   20 Jan 2025
                   <div className="grid grids-cols-1 divide-y mt-4 gap-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
                       <p>Activity</p>
                       <div className="flex gap-10 md:gap-20">
-                        <p>col2</p>
-                        <p>col3</p>
+                        <p>Start</p>
+                        <p>End</p>
                       </div>
                     </div>
                     {schedulesDay3.map((schedule) => {
@@ -160,15 +160,15 @@ const Program = () => {
               </div>
             )}
             {selectDay.day4 && (
-              <div className="w-full flex justify-center h-[612px] bg-[rgba(161,162,163,1)] rounded-lg">
-                <div className="w-[95%] md:w-[70%] border-[1px] border-white my-10 p-4 rounded-md">
+              <div className="w-full flex justify-center h-fit bg-white rounded-b-lg rounded-r-lg">
+                <div className="w-[100%] border-[1px] border-black p-4 rounded-md">
                   21 Jan 2025
                   <div className="grid grids-cols-1 divide-y mt-4 h-fit">
                     <div className="flex justify-between text-[rgba(130,130,130,1)] items-center">
                       <p>Activity</p>
                       <div className="flex gap-10 md:gap-20">
-                        <p>col2</p>
-                        <p>col3</p>
+                        <p>Start</p>
+                        <p>End</p>
                       </div>
                     </div>
                     {schedulesDay4.map((schedule) => {
