@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import VideoBackground from "../components/VideoBackground.jsx"; // Import your video background component
+import VideoBackground from "../components/VideoBackground.jsx"; 
 import { NavLink } from "react-router-dom";
-import '../Home.css'; // Ensure correct path
+import '../Home.css'; 
 
 const Home = ({ user }) => {
   const [mouseEnter, setMouseEnter] = useState("zero");
@@ -27,7 +27,7 @@ const Home = ({ user }) => {
 
   return (
     <div className={`home-header min-w-screen min-h-screen ${bgColor} flex flex-col items-center`}>
-      <VideoBackground /> {/* Add video background component */}
+      <VideoBackground /> 
 
       <div className="absolute text-center flex flex-col gap-3">
         <div className="relative w-screen max-w-screen-2xl h-[750px] flex flex-col justify-center items-center gap-4">
@@ -47,20 +47,6 @@ const Home = ({ user }) => {
           </NavLink>
         </div>
       </div>
-
-      <section className="flex flex-wrap w-full max-w-screen-2xl justify-between items-center h-[500px] px-4 md:px-20">
-        <div className="flex flex-col gap-5">
-          <p className="font-bold text-4xl">The new style competition</p>
-          <p className="font-light text-gray-500">
-            The new style of competition never seen before!
-          </p>
-          <button className="bg-black text-white px-4 py-3 rounded-lg w-fit">
-            Learn more
-          </button>
-        </div>
-      </section>
-
-      {/* Other sections can follow here */}
     </div>
   );
 };
