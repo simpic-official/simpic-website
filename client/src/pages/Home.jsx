@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Parallax from "../components/Parallax";
+import VideoBackground from "../components/VideoBackground"; // Import your video background component
 import { NavLink } from "react-router-dom";
 import '../Home.css'; // Ensure correct path
 
@@ -27,9 +27,8 @@ const Home = ({ user }) => {
 
   return (
     <div className={`home-header min-w-screen min-h-screen ${bgColor} flex flex-col items-center`}>
-      <div className="parallax-container">
-        <Parallax />
-      </div>
+      <VideoBackground /> {/* Add video background component */}
+
       <div className="absolute text-center flex flex-col gap-3">
         <div className="relative w-screen max-w-screen-2xl h-[750px] flex flex-col justify-center items-center gap-4">
           <p className="text-[48px] md:text-[64px] text-black font-extrabold">
@@ -42,14 +41,13 @@ const Home = ({ user }) => {
           </p>
           <NavLink
             to="/registration"
-            className="transition-all ease-in-out duration-300 delay-150 hover:-traanslate-y-1 hover:scale-110 bg-black hover:bg-gray-800 text-white w-fit px-4 py-3 rounded-lg"
+            className="transition-all ease-in-out duration-300 delay-150 hover:-translate-y-1 hover:scale-110 bg-black hover:bg-gray-800 text-white w-fit px-4 py-3 rounded-lg"
           >
             Register Now
           </NavLink>
         </div>
       </div>
 
-      {/* Rest of the sections */}
       <section className="flex flex-wrap w-full max-w-screen-2xl justify-between items-center h-[500px] px-4 md:px-20">
         <div className="flex flex-col gap-5">
           <p className="font-bold text-4xl">The new style competition</p>
@@ -60,11 +58,9 @@ const Home = ({ user }) => {
             Learn more
           </button>
         </div>
-     
       </section>
 
       {/* Other sections can follow here */}
-
     </div>
   );
 };
