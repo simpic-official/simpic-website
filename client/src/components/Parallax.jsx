@@ -115,14 +115,15 @@ function Parallax() {
     return (
         <div className="parallax-outer">
             <div ref={parallaxRef} style={{ background: `linear-gradient(#0F2B9C, #673D7D ${background}%, #A74A67, #EDFC54 )` }} className='parallax'>
-                <img ref={mountain3} className='mountain-3' src="/parallax/mountain-3.svg" />
-                <img ref={mountain2} className='mountain-2' src="/parallax/mountain-2.svg" />
-                <img ref={mountain1} className='mountain-1' src="/parallax/mountain-1.svg" />
-                <img ref={sun} className='sun' src="/parallax/sun.svg" />
-                <img ref={cloudsBottom} className='clouds-bottom' src="/parallax/cloud-bottom.svg" />
-                <img ref={cloudsLeft} className='clouds-left' src="/parallax/clouds-left.svg" />
-                <img ref={cloudsRight} className='clouds-right' src="/parallax/clouds-right.svg" />
-                <img ref={stars} className='stars' src="/parallax/stars.svg" />
+                <img ref={mountain3} className='mountain-3' src="/images/Parallax/mountain-3.svg" />
+                <img ref={mountain2} className='mountain-2' src="/images/Parallax/mountain-2.svg" />
+                <img ref={mountain1} className='mountain-1' src="/images/Parallax/mountain-1.svg" />
+                <img ref={sun} className='sun' src="/images/Parallax/sun.svg" />
+                <img ref={cloudsBottom} className='clouds-bottom' src="/images/Parallax/cloud-bottom.svg" />
+                <img ref={cloudsLeft} className='clouds-left' src="/images/Parallax/clouds-left.svg" />
+                <img ref={cloudsRight} className='clouds-right' src="/images/Parallax/clouds-right.svg" />
+                <img ref={stars} className='stars' src="/images/Parallax/stars.svg" />
+
                 <div ref={copy} className="copy">
                     <h1>Journey</h1>
                     <span ref={btn}>Discover more</span>
