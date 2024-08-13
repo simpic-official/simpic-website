@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import VideoBackground from "../components/VideoBackground"; // Import your video background component
+import VideoBackground from "../components/VideoBackground.jsx"; // Import your video background component
 import { NavLink } from "react-router-dom";
 import '../Home.css'; // Ensure correct path
 
