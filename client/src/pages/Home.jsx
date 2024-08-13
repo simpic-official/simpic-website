@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Parallax from '@/components/Parallax';
+import Parallax from "../components/Parallax";
 import { NavLink } from "react-router-dom";
 
 const Home = ({ user }) => {
