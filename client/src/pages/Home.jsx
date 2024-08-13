@@ -57,9 +57,7 @@ const Home = ({ user }) => {
             Learn more
           </button>
         </div>
-        <div>
-          <img src={bird} alt="bird" className="w-[500px]" />
-        </div>
+     
       </section>
 
       {/* Other sections can follow here */}
