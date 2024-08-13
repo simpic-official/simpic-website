@@ -105,13 +105,14 @@ body {
 }
 
 .home-header {
-  min-w-screen min-h-screen;
   background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
+  min-height: 100vh; /* Use min-height instead of min-h-screen */
+  width: 100vw; /* Use width to ensure full width */
 }
 
 .home-header-content {
