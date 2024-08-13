@@ -1,0 +1,180 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #282a57;
+  --secondaryColor: #e4e4e4;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.home-parallax-outer {
+  overflow: hidden;
+}
+
+.home-parallax {
+  height: 110vh;
+  width: 100%;
+  position: relative;
+}
+
+.home-parallax img {
+  position: absolute;
+}
+
+.home-mountain-3,
+.home-mountain-2,
+.home-mountain-1 {
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.home-mountain-2 {
+  bottom: 20px;
+  z-index: 2;
+}
+
+.home-mountain-1 {
+  bottom: 40px;
+  z-index: 1;
+}
+
+.home-sun {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.home-clouds-left {
+  left: 0;
+  width: 20%;
+}
+
+.home-clouds-right {
+  right: 0;
+  width: 20%;
+}
+
+.home-clouds-bottom {
+  bottom: 0;
+  width: 100%;
+}
+
+.home-stars {
+  top: -550px;
+  left: 0;
+  width: 100%;
+}
+
+.home-copy {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.home-copy h1 {
+  font-size: 10rem;
+}
+
+.home-copy span {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 1rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  opacity: 0;
+}
+
+.home-header {
+  min-w-screen min-h-screen;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.home-header-content {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.home-header-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: black;
+}
+
+.home-header-subtitle {
+  font-size: 1rem;
+  color: gray;
+}
+
+.home-header-button {
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.home-header-button:hover {
+  background-color: gray;
+  transform: translateY(-0.25rem) scale(1.1);
+}
+
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.home-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home-section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.home-section-description {
+  font-size: 1.25rem;
+  color: gray;
+}
+
+.home-section-button {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
