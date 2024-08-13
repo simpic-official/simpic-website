@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Parallax from "../components/Parallax";
 import { NavLink } from "react-router-dom";
-import '../Home.css'; 
+import '../Home.css'; // Ensure correct path
 
 const Home = ({ user }) => {
   const [mouseEnter, setMouseEnter] = useState("zero");
@@ -26,18 +26,23 @@ const Home = ({ user }) => {
   }, [mouseEnter]);
 
   return (
-    <div className={`home-header ${bgColor}`}>
-      <Parallax />
-      <div className="home-header-content">
+    <div className={`home-header min-w-screen min-h-screen ${bgColor} flex flex-col items-center`}>
+      <div className="parallax-container">
+        <Parallax />
+      </div>
+      <div className="absolute text-center flex flex-col gap-3">
         <div className="relative w-screen max-w-screen-2xl h-[750px] flex flex-col justify-center items-center gap-4">
-          <p className="home-header-title">SIMPIC 2025</p>
-          <p className="home-header-subtitle">
-            The 14th Siriraj International Medical Microbiology, Parasitology, and <br />
+          <p className="text-[48px] md:text-[64px] text-black font-extrabold">
+            SIMPIC 2025
+          </p>
+          <p className="text-[16px] md:text-[24px]">
+            The 14th Siriraj International Medical Microbiology, Parasitology,
+            and <br />
             Immunology Competition
           </p>
           <NavLink
             to="/registration"
-            className="home-header-button"
+            className="transition-all ease-in-out duration-300 delay-150 hover:-traanslate-y-1 hover:scale-110 bg-black hover:bg-gray-800 text-white w-fit px-4 py-3 rounded-lg"
           >
             Register Now
           </NavLink>
@@ -45,19 +50,21 @@ const Home = ({ user }) => {
       </div>
 
       {/* Rest of the sections */}
-      <section className="home-section">
-        <div className="home-section-content">
-          <p className="home-section-title">The new style competition</p>
-          <p className="home-section-description">
+      <section className="flex flex-wrap w-full max-w-screen-2xl justify-between items-center h-[500px] px-4 md:px-20">
+        <div className="flex flex-col gap-5">
+          <p className="font-bold text-4xl">The new style competition</p>
+          <p className="font-light text-gray-500">
             The new style of competition never seen before!
           </p>
-          <button className="home-section-button">
+          <button className="bg-black text-white px-4 py-3 rounded-lg w-fit">
             Learn more
           </button>
         </div>
+     
       </section>
 
       {/* Other sections can follow here */}
+
     </div>
   );
 };
