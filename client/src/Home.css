@@ -1,25 +1,6 @@
-/* Global Styles */
-*,
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Home Page Specific Styles */
 
-:root {
-    --primaryColor: #282a57;
-    --secondaryColor: #e4e4e4;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--primaryColor);
-    color: var(--secondaryColor);
-    scroll-behavior: smooth;
-}
-
-/* Home Page Styles */
+/* Home Page Container */
 .home-header {
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 1);
@@ -30,6 +11,102 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Parallax Styles */
+.home-header .parallax-container {
+    position: relative;
+    height: 100vh; /* Ensure it takes up the full viewport height */
+    width: 100vw; /* Ensure it takes up the full viewport width */
+    overflow: hidden;
+}
+
+.home-header .parallax {
+    position: relative;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
+
+.home-header .parallax img {
+    position: absolute;
+    display: block;
+}
+
+.home-header .parallax .mountain-3,
+.home-header .parallax .mountain-2,
+.home-header .parallax .mountain-1 {
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+}
+
+.home-header .parallax .mountain-2 {
+    bottom: 20px;
+    z-index: 2;
+}
+
+.home-header .parallax .mountain-1 {
+    bottom: 40px;
+    z-index: 1;
+}
+
+.home-header .parallax .sun {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.home-header .parallax .clouds-left,
+.home-header .parallax .clouds-right {
+    width: 20%;
+}
+
+.home-header .parallax .clouds-left {
+    left: 0;
+}
+
+.home-header .parallax .clouds-right {
+    right: 0;
+}
+
+.home-header .parallax .clouds-bottom {
+    bottom: 0;
+    width: 100%;
+}
+
+.home-header .parallax .stars {
+    top: -550px;
+    left: 0;
+    width: 100%;
+}
+
+.home-header .parallax .copy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.home-header .parallax .copy h1 {
+    font-size: 10rem;
+}
+
+.home-header .parallax .copy span {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 0.5rem;
+    opacity: 0;
+}
+
+/* General Page Elements */
 .home-header .absolute {
     position: absolute;
     text-align: center;
@@ -109,96 +186,4 @@ body {
     border-radius: 0.5rem;
 }
 
-/* Parallax Styles */
-.parallax-outer {
-    overflow: hidden;
-    position: relative;
-    height: 100vh; /* Ensure it takes up the full viewport height */
-}
-
-.parallax {
-    height: 100vh; /* Ensure it takes up the full viewport height */
-    width: 100vw; /* Ensure it takes up the full viewport width */
-    position: relative;
-}
-
-.parallax img {
-    position: absolute;
-    display: block;
-}
-
-.mountain-3,
-.mountain-2,
-.mountain-1 {
-    width: 100%;
-    bottom: 0;
-    z-index: 3;
-}
-
-.mountain-2 {
-    bottom: 20px;
-    z-index: 2;
-}
-
-.mountain-1 {
-    bottom: 40px;
-    z-index: 1;
-}
-
-.sun {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-}
-
-.clouds-left,
-.clouds-right {
-    width: 20%;
-}
-
-.clouds-left {
-    left: 0;
-}
-
-.clouds-right {
-    right: 0;
-}
-
-.clouds-bottom {
-    bottom: 0;
-    width: 100%;
-}
-
-.stars {
-    top: -550px;
-    left: 0;
-    width: 100%;
-}
-
-.copy {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    color: var(--secondaryColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-}
-
-.copy h1 {
-    font-size: 10rem;
-}
-
-.copy span {
-    background-color: var(--secondaryColor);
-    color: var(--primaryColor);
-    padding: 1rem;
-    font-weight: 800;
-    border-radius: 0.5rem;
-    opacity: 0;
-}
+/* Additional Styles for other sections can be added here */
