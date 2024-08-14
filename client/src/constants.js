@@ -13,87 +13,117 @@ import invitationpackage from './images/invitationpackage.png'
 export const schedulesDay1 = [
     {
         col1: "Registration",
-        col2: "09:00 AM",
-        col3: "12:00 PM"
+        col2: "09:00",
+        col3: "12:00"
     },
     {
         col1: "Lunch",
-        col2: "12:00 PM",
-        col3: "01:00 PM"
+        col2: "11:00",
+        col3: "13:00"
     },
     {
         col1: "Opening Ceremony",
-        col2: "01:00 PM",
-        col3: "02:30 PM"
+        col2: "13:30",
+        col3: "14:45"
     },
     {
-        col1: "Recreational Activity",
-        col2: "02:30 PM",
-        col3: "06:30 PM"
+        col1: "Cultural Activity",
+        col2: "15:00",
+        col3: "18.15"
     },
     {
         col1: "Welcome Dinner",
-        col2: "06:30 PM",
-        col3: "09:30 PM"
+        col2: "18:30",
+        col3: "21:00"
+    },
+    {
+        col1: "Travel back to Hotel",
+        col2: "21:00",
+        col3: "21:15"
     },
 ]
 
 export const schedulesDay2 = [
     {
+        col1: "Breakfast at Hotel",
+        col2: "06:00",
+        col3: "08:00"
+    },
+    {
         col1: "Examination Round 1 / Conference",
-        col2: "09:00 AM",
-        col3: "12:00 PM"
+        col2: "09:00",
+        col3: "12:00"
     },
     {
         col1: "Conference",
-        col2: "09:30 AM",
-        col3: "11:30 AM",
+        col2: "09:30",
+        col3: "11:30",
     },
     {
         col1: "Lunch",
-        col2: "11:30 AM",
-        col3: "01:30 PM"
+        col2: "11:30",
+        col3: "13:00"
+    }
+    {
+        col1: "Delegate-Buddy Time",
+        col2: "13:00",
+        col3: "Onwards"
     }
 ]
 
 export const schedulesDay3 = [
     {
+        col1: "Breakfast at Hotel",
+        col2: "06:00",
+        col3: "08:00"
+    },
+    {
         col1: "Examination Round 2",
-        col2: "09:00 AM",
-        col3: "10:30 AM"
+        col2: "09:00",
+        col3: "10:30"
     },
     {
         col1: "Examination Round 3",
-        col2: "10:30 AM",
-        col3: "11:30 AM"
+        col2: "10:30",
+        col3: "11:45"
     },
     {
         col1: "Lunch",
-        col2: "12:00 PM",
-        col3: "01:30 PM"
+        col2: "12:00",
+        col3: "13:30"
     },
     {
         col1: "Final Round Examination",
-        col2: "01:30 PM",
-        col3: "04:30 PM"
+        col2: "13:30",
+        col3: "16:30"
     },
     {
         col1: "Closing Ceremony",
-        col2: "04:30 PM",
-        col3: "05:30 PM"
+        col2: "16:30",
+        col3: "17:00"
     },
     {
         col1: "Farewell Party",
-        col2: "06:00 PM",
-        col3: "10:00 PM"
+        col2: "18:00",
+        col3: "21:00"
+    },
+    {
+        col1: "Travel back to Hotel",
+        col2: "21:00",
+        col3: "21:15"
     },
 ]
 
 export const schedulesDay4 = [
     {
+        col1: "Breakfast at Hotel",
+        col2: "06:00",
+        col3: "08:00"
+    },
+    {
         col1: "Cultural Excursion",
-        col2: "09:00 AM",
-        col3: "03:30 PM"
+        col2: "08:30",
+        col3: "15:30"
     },
 ]
 
