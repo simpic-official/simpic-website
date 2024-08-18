@@ -63,7 +63,7 @@ export const schedulesDay2 = [
         col1: "Lunch",
         col2: "11:30",
         col3: "13:00"
-    }
+    },
     {
         col1: "Delegate-Buddy Time",
         col2: "13:00",
