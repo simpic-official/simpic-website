@@ -7,19 +7,20 @@
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     position: relative;
+    overflow: hidden;
 }
 
-.home-header .video-container {
+.video-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; 
+    z-index: -1;
 }
 
-.home-header .video {
+.video {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +29,7 @@
     object-fit: cover;
 }
 
-.home-header .content-absolute {
+.content-absolute {
     position: absolute;
     text-align: center;
     display: flex;
@@ -37,7 +38,7 @@
     z-index: 1;
 }
 
-.home-header .content-relative {
+.content-relative {
     position: relative;
     width: 100vw;
     max-width: 100vw;
@@ -49,56 +50,56 @@
     gap: 1rem;
 }
 
-.home-header .text-large {
+.text-large {
     font-size: 64px;
 }
 
-.home-header .text-medium {
+.text-medium {
     font-size: 24px;
 }
 
-.home-header .text-small {
+.text-small {
     font-size: 16px;
 }
 
-.home-header .text-xsmall {
+.text-xsmall {
     font-size: 48px;
 }
 
-.home-header .transition-all {
+.transition-all {
     transition: all 0.3s ease-in-out;
 }
 
-.home-header .hover-scale-110:hover {
+.hover-scale-110:hover {
     transform: scale(1.1);
 }
 
-.home-header .bg-black {
+.bg-black {
     background-color: black;
 }
 
-.home-header .hover-bg-gray-800:hover {
+.hover-bg-gray-800:hover {
     background-color: #333;
 }
 
-.home-header .text-white {
+.text-white {
     color: white;
 }
 
-.home-header .w-fit {
+.w-fit {
     width: fit-content;
 }
 
-.home-header .px-4 {
+.px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.home-header .py-3 {
+.py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
 
-.home-header .rounded-lg {
+.rounded-lg {
     border-radius: 0.5rem;
 }
